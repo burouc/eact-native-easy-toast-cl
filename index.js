@@ -151,7 +151,7 @@ Toast.propTypes = {
         'center',
         'bottom',
     ]),
-    textStyle: Text.propTypes.style,
+    textStyle: PropTypes.object,
     positionValue:PropTypes.number,
     fadeInDuration:PropTypes.number,
     fadeOutDuration:PropTypes.number,
