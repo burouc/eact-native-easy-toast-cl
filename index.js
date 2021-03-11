@@ -13,12 +13,10 @@ import {
     Animated,
     Dimensions,
     Text,
-    TouchableWithoutFeedback,
-    ViewPropTypes as RNViewPropTypes,
+    TouchableWithoutFeedback
 } from 'react-native'
 
 import PropTypes from 'prop-types';
-const ViewPropTypes = RNViewPropTypes || View.propTypes;
 export const DURATION = {
     LENGTH_SHORT: 500,
     FOREVER: 0,
@@ -147,7 +145,7 @@ const styles = StyleSheet.create({
 });
 
 Toast.propTypes = {
-    style: ViewPropTypes.style,
+    style: PropTypes.object,
     position: PropTypes.oneOf([
         'top',
         'center',
